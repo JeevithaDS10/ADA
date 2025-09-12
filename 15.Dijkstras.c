@@ -37,6 +37,7 @@ void dijkstras(int n,int cost[n][n],int source)
         visit[u]=1;
         for(int j=1;j<=n;j++)
         {
+            count++;
             if(!visit[j] && dist[j]>(dist[u]+cost[u][j]))
             {
                 dist[j]=dist[u]+cost[u][j];
